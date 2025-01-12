@@ -8,7 +8,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.post(
-          "https://cloud.mongodb.com/api/public/v1.0/orgs/"
+          "https://web-dev-uof-t-hacks2025.vercel.app/users"
         );
         setPeople(response.data.documents);
       } catch (error) {
