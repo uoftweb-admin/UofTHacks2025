@@ -10,7 +10,8 @@ function App() {
         const response = await axios.post(
           "https://web-dev-uof-t-hacks2025.vercel.app/users"
         );
-        setPeople(response.data.documents);
+        console.log(response.data)
+        setPeople(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
